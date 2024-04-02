@@ -7,8 +7,11 @@
 </head>
 <body>
     <center>
-        <h1>My name is {{name}}</h1>
-        <h1>D%O {{father}}</h1>
+        {% if age > 15 %}
+            <h1>My name is {{name}}</h1>
+            <h1>D%O {{father}}</h1>
+            My age is <h1>{{age}}</h1>
+        {% endif %}
     </center>
 </body>
 </html>
